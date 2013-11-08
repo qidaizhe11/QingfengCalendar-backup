@@ -27,3 +27,6 @@ HEADERS  += \
     src/monthview/MonthDayLabel.h \
     src/monthview/MonthWidget.h \
     src/theme/CalendarTheme.h
+
+OTHER_FILES += \
+    README.md
