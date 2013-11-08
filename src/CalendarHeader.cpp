@@ -1,7 +1,7 @@
 
 //-------------------------------------------------------------------------
 
-#include "calendarheader.h"
+#include "CalendarHeader.h"
 #include <QtWidgets>
 
 //-------------------------------------------------------------------------
@@ -16,6 +16,8 @@ CalendarHeader::CalendarHeader(QWidget* parent /* = 0 */)
   createConnections();
 
   //setColorStyleSheet();
+
+  setSelectedDate(QDate::currentDate());
 }
 
 //-------------------------------------------------------------------------
@@ -46,9 +48,9 @@ void CalendarHeader::nextMonth()
 
 void CalendarHeader::createWidgets()
 {
-  previous_month_button = new QPushButton;
+  previous_month_button = new QPushButton("Pre");
   previous_month_button->setObjectName("previous_month_button");
-  next_month_button = new QPushButton;
+  next_month_button = new QPushButton("Next");
   next_month_button->setObjectName("next_month_button");
   QString date__string =
       QLocale::system().toString(selected_date_, "yyyy  MMM");

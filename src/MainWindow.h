@@ -1,14 +1,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include <QWidget>
 #include <QDate>
 
 class CalendarHeader;
 class QStackedWidget;
-//class MonthWidget;
+class MonthWidget;
 
-class MainWindow : public QMainWindow
+class MainWindow : public QWidget
 {
   Q_OBJECT
 public:
@@ -27,6 +27,8 @@ private:
 
   CalendarHeader *calendar_header;
   QStackedWidget *calendar_internal;
+
+  MonthWidget *month_widget;
 
   QDate selected_date_;
 };

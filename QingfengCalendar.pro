@@ -14,11 +14,16 @@ TEMPLATE = app
 
 SOURCES += \
     src/main.cpp \
-    src/mainwindow.cpp \
-    src/calendarheader.cpp \
-    src/monthview/monthwidget.cpp
+    src/MainWindow.cpp \
+    src/CalendarHeader.cpp \
+    src/monthview/MonthDayLabel.cpp \
+    src/monthview/MonthWidget.cpp \
+    src/theme/CalendarTheme.cpp
 
 HEADERS  += \
-    src/mainwindow.h \
-    src/calendarheader.h \
-    src/monthview/monthwidget.h
+    src/MainWindow.h \
+    src/CalendarHeader.h \
+    src/QcGlobal.h \
+    src/monthview/MonthDayLabel.h \
+    src/monthview/MonthWidget.h \
+    src/theme/CalendarTheme.h
