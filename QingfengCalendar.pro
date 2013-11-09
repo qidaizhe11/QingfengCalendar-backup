@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,7 +18,9 @@ SOURCES += \
     src/CalendarHeader.cpp \
     src/monthview/MonthDayLabel.cpp \
     src/monthview/MonthWidget.cpp \
-    src/theme/CalendarTheme.cpp
+    src/theme/CalendarTheme.cpp \
+    src/database/CalendarContract.cpp \
+    src/database/Database.cpp
 
 HEADERS  += \
     src/MainWindow.h \
@@ -26,7 +28,9 @@ HEADERS  += \
     src/QcGlobal.h \
     src/monthview/MonthDayLabel.h \
     src/monthview/MonthWidget.h \
-    src/theme/CalendarTheme.h
+    src/theme/CalendarTheme.h \
+    src/database/CalendarContract.h \
+    src/database/Database.h
 
 OTHER_FILES += \
     README.md
