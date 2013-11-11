@@ -11,13 +11,13 @@ class QPushButton;
 
 //-------------------------------------------------------------------------
 
-class CalendarHeader : public QFrame
+class CalendarHeaderView : public QFrame
 {
   Q_OBJECT
 
 public:
-  CalendarHeader(QWidget* parent = 0);
-  ~CalendarHeader() {}
+  CalendarHeaderView(QWidget* parent = 0);
+  ~CalendarHeaderView() {}
 
 signals:
   void selectedDateChanged(const QDate& date);

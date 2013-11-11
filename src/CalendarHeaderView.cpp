@@ -1,12 +1,12 @@
 
 //-------------------------------------------------------------------------
 
-#include "CalendarHeader.h"
+#include "CalendarHeaderView.h"
 #include <QtWidgets>
 
 //-------------------------------------------------------------------------
 
-CalendarHeader::CalendarHeader(QWidget* parent /* = 0 */)
+CalendarHeaderView::CalendarHeaderView(QWidget* parent /* = 0 */)
   : QFrame(parent)
 {
   selected_date_ = QDate::currentDate();
@@ -23,7 +23,7 @@ CalendarHeader::CalendarHeader(QWidget* parent /* = 0 */)
 //-------------------------------------------------------------------------
 // slots
 
-void CalendarHeader::setSelectedDate(const QDate& date)
+void CalendarHeaderView::setSelectedDate(const QDate& date)
 {
   QString date_string =
       QLocale::system().toString(date, "yyyy  MMM");
@@ -33,12 +33,12 @@ void CalendarHeader::setSelectedDate(const QDate& date)
   emit selectedDateChanged(date);
 }
 
-void CalendarHeader::previousMonth()
+void CalendarHeaderView::previousMonth()
 {
   setSelectedDate(selected_date_.addMonths(-1));
 }
 
-void CalendarHeader::nextMonth()
+void CalendarHeaderView::nextMonth()
 {
   setSelectedDate(selected_date_.addMonths(1));
 }
@@ -46,7 +46,7 @@ void CalendarHeader::nextMonth()
 //-------------------------------------------------------------------------
 // private
 
-void CalendarHeader::createWidgets()
+void CalendarHeaderView::createWidgets()
 {
   previous_month_button = new QPushButton("Pre");
   previous_month_button->setObjectName("previous_month_button");
@@ -58,7 +58,7 @@ void CalendarHeader::createWidgets()
   date_label->setObjectName("date_label");
 }
 
-void CalendarHeader::createLayout()
+void CalendarHeaderView::createLayout()
 {
   QHBoxLayout* header_layout = new QHBoxLayout;
   header_layout->setMargin(0);
@@ -81,7 +81,7 @@ void CalendarHeader::createLayout()
   setLayout(header_layout);
 }
 
-void CalendarHeader::createConnections()
+void CalendarHeaderView::createConnections()
 {
   connect(previous_month_button, SIGNAL(clicked()),this, SLOT(previousMonth()));
   connect(next_month_button, SIGNAL(clicked()), this, SLOT(nextMonth()));

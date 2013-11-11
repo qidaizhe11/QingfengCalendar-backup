@@ -31,7 +31,7 @@ void MainWindow::setSelectedDate(const QDate &date)
 
 void MainWindow::createWidgets()
 {
-  calendar_header = new CalendarHeader(this);
+  calendar_header = new CalendarHeaderView(this);
   calendar_internal = new QStackedWidget(this);
 
 //  MonthWidget *month_widget = new MonthWidget();

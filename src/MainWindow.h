@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QDate>
 
-class CalendarHeader;
+class CalendarHeaderView;
 class QStackedWidget;
 class MonthWidget;
 
@@ -25,7 +25,7 @@ private:
   void createLayout();
   void createConnections();
 
-  CalendarHeader *calendar_header;
+  CalendarHeaderView *calendar_header;
   QStackedWidget *calendar_internal;
 
   MonthWidget *month_widget;
