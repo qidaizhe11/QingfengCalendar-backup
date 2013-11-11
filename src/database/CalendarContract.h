@@ -3,7 +3,7 @@
 
 #include <QString>
 
-class Calendars
+class CalendarColumns
 {
 public:
   static const QString NAME;
@@ -12,7 +12,7 @@ public:
   static const QString VISIBLE;
 };
 
-class Events
+class EventColumns
 {
 public:
   static const QString CALENDAR_ID;
@@ -26,6 +26,7 @@ public:
   static const QString EVENT_END_TIMEZONE;
   static const QString ALL_DAY;
   static const QString AVAILABILITY;
+  static const QString ACCESS_LEVEL;
   static const QString RRULE;
   static const QString RDATE;
   static const QString ORGANIZER;
@@ -42,7 +43,7 @@ class Instances
   static const QString END_MINUTE;
 };
 
-class Reminders
+class ReminderColumns
 {
   static const QString EVENT_ID;
   static const QString MINUTES;

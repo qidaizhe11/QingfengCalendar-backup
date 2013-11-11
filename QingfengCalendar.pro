@@ -20,7 +20,9 @@ SOURCES += \
     src/monthview/MonthWidget.cpp \
     src/theme/CalendarTheme.cpp \
     src/database/CalendarContract.cpp \
-    src/database/Database.cpp
+    src/database/Database.cpp \
+    src/database/ICalendarHelper.cpp \
+    src/database/CalendarItems.cpp
 
 HEADERS  += \
     src/MainWindow.h \
@@ -30,7 +32,9 @@ HEADERS  += \
     src/monthview/MonthWidget.h \
     src/theme/CalendarTheme.h \
     src/database/CalendarContract.h \
-    src/database/Database.h
+    src/database/Database.h \
+    src/database/ICalendarHelper.h \
+    src/database/CalendarItems.h
 
 OTHER_FILES += \
     README.md
