@@ -1,7 +1,7 @@
 
 #include "MainWindow.h"
 #include <QtWidgets>
-#include "CalendarHeader.h"
+#include "CalendarHeaderView.h"
 #include "src/monthview/MonthWidget.h"
 
 //-------------------------------------------------------------------------

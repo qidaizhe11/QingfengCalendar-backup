@@ -4,7 +4,7 @@
 #include "MonthDayLabel.h"
 #include <QtWidgets>
 #include "src/theme/CalendarTheme.h"
-#include "src/QcGlobal.h"
+#include "src/QfGlobal.h"
 
 //-------------------------------------------------------------------------
 

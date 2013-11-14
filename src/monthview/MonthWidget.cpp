@@ -3,7 +3,7 @@
 
 #include "MonthWidget.h"
 #include <QtWidgets>
-#include "src/QcGlobal.h"
+#include "src/QfGlobal.h"
 #include "src/monthview/MonthDayLabel.h"
 
 //-------------------------------------------------------------------------

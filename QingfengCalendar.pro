@@ -23,12 +23,11 @@ SOURCES += \
     src/database/ICalendarHelper.cpp \
     src/database/CalendarItems.cpp \
     src/EventSettingsView.cpp \
-    src/QcDateEdit.cpp \
-    src/CalendarHeaderView.cpp
+    src/CalendarHeaderView.cpp \
+    src/QfDateEdit.cpp
 
 HEADERS  += \
     src/MainWindow.h \
-    src/QcGlobal.h \
     src/monthview/MonthDayLabel.h \
     src/monthview/MonthWidget.h \
     src/theme/CalendarTheme.h \
@@ -37,8 +36,12 @@ HEADERS  += \
     src/database/ICalendarHelper.h \
     src/database/CalendarItems.h \
     src/EventSettingsView.h \
-    src/QcDateEdit.h \
-    src/CalendarHeaderView.h
+    src/CalendarHeaderView.h \
+    src/QfDateEdit.h \
+    src/QfGlobal.h \
+    src/theme/CalendarTheme.h \
+    src/monthview/MonthWidget.h \
+    src/monthview/MonthDayLabel.h
 
 OTHER_FILES += \
     README.md
